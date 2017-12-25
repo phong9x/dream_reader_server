@@ -1,0 +1,8 @@
+Update date : Thu Sep 28 09:40:43 ICT 2017
+ 
+ Table 'payment_history' not found in repository
+ (+) table 'payment_history' added
+ 
+ Table 'user' found in repository
+ . Column 'point' added
+ (*) table 'user' updated : 1 change(s)

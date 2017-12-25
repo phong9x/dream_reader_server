@@ -1,0 +1,22 @@
+/*
+ * Created on $today.date ( Time $today.time )
+ * Code by Kenny Phong
+ */
+package ${target.javaPackageFromFolder($SRC)};
+
+public class ApplicationDefine {
+	public enum UserRole {
+
+		User((short)1), Admin((short)2);
+		
+		short code;
+
+		UserRole(short code) {
+			this.code = code;
+		}
+
+		public short getCode() {
+			return code;
+		}
+	}
+}

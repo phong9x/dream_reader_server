@@ -1,0 +1,14 @@
+Update date : Tue Oct 10 17:22:44 ICT 2017
+ 
+ Table 'category' found in repository
+ (=) table 'category' unchanged
+ 
+ Table 'contents' found in repository
+ (=) table 'contents' unchanged
+ 
+ Table 'payment_history' found in repository
+ (=) table 'payment_history' unchanged
+ 
+ Table 'user' found in repository
+ . Column 'phone' added
+ (*) table 'user' updated : 1 change(s)

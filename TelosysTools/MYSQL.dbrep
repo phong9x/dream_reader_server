@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Telosys Database Repository --><root>
+<tableList databaseId="0" databaseName="MYSQL" databaseProductName="MySQL" generation="2017-09-27 14:41:33">
+<table catalog="dream_reader" databaseType="TABLE" javaBean="Category" name="category" schema="">
+<column dbAutoIncremented="true" dbComment="" dbDefaultValue="" dbName="id" dbNotNull="true" dbPosition="1" dbPrimaryKey="true" dbSize="10" dbTypeName="INT" inputType="number" javaName="id" javaType="java.lang.Integer" jdbcTypeCode="4" label="Id" notNull="true" selected="true"/>
+<column dbComment="" dbDefaultValue="" dbName="parent_id" dbNotNull="false" dbPosition="2" dbSize="10" dbTypeName="INT" inputType="number" javaName="parentId" javaType="java.lang.Integer" jdbcTypeCode="4" label="Parent id" notNull="false" selected="true"/>
+<column dbComment="" dbDefaultValue="" dbName="category_name" dbNotNull="true" dbPosition="3" dbSize="128" dbTypeName="VARCHAR" inputType="text" javaName="categoryName" javaType="java.lang.String" jdbcTypeCode="12" label="Category name" maxLength="128" notEmpty="true" notNull="true" selected="true"/>
+</table>
+<table catalog="dream_reader" databaseType="TABLE" javaBean="Contents" name="contents" schema="">
+<column dbAutoIncremented="true" dbComment="" dbDefaultValue="" dbName="id" dbNotNull="true" dbPosition="1" dbPrimaryKey="true" dbSize="10" dbTypeName="INT" inputType="number" javaName="id" javaType="java.lang.Integer" jdbcTypeCode="4" label="Id" notNull="true" selected="true"/>
+<column dbComment="" dbDefaultValue="" dbName="category_id" dbNotNull="true" dbPosition="2" dbSize="10" dbTypeName="INT" inputType="number" javaName="categoryId" javaType="java.lang.Integer" jdbcTypeCode="4" label="Category id" notNull="true" selected="true"/>
+<column dbComment="" dbDefaultValue="" dbName="title" dbNotNull="true" dbPosition="3" dbSize="512" dbTypeName="VARCHAR" inputType="text" javaName="title" javaType="java.lang.String" jdbcTypeCode="12" label="Title" maxLength="512" notEmpty="true" notNull="true" selected="true"/>
+<column dbComment="" dbDefaultValue="" dbName="body" dbNotNull="true" dbPosition="4" dbSize="65535" dbTypeName="TEXT" inputType="text" javaName="body" javaType="java.lang.String" jdbcTypeCode="-1" label="Body" longText="true" maxLength="65535" notEmpty="true" notNull="true" selected="true"/>
+</table>
+<table catalog="dream_reader" databaseType="TABLE" javaBean="PaymentHistory" name="payment_history" schema="">
+<column dbAutoIncremented="true" dbComment="" dbDefaultValue="" dbName="id" dbNotNull="true" dbPosition="1" dbPrimaryKey="true" dbSize="10" dbTypeName="INT" inputType="number" javaName="id" javaType="java.lang.Integer" jdbcTypeCode="4" label="Id" notNull="true" selected="true"/>
+<column dbComment="" dbDefaultValue="" dbName="user_id" dbNotNull="true" dbPosition="2" dbSize="10" dbTypeName="INT" inputType="number" javaName="userId" javaType="java.lang.Integer" jdbcTypeCode="4" label="User id" notNull="true" selected="true"/>
+<column dbComment="" dbDefaultValue="" dbName="money" dbNotNull="false" dbPosition="3" dbSize="10" dbTypeName="INT" inputType="number" javaName="money" javaType="java.lang.Integer" jdbcTypeCode="4" label="Money" notNull="false" selected="true"/>
+<column dbComment="" dbDefaultValue="" dbName="point" dbNotNull="false" dbPosition="4" dbSize="10" dbTypeName="INT" inputType="number" javaName="point" javaType="java.lang.Integer" jdbcTypeCode="4" label="Point" notNull="false" selected="true"/>
+<column dbComment="0: waiting /1 :payment success/ 2:payment need tranfer money/ 3:cancel" dbDefaultValue="" dbName="status" dbNotNull="true" dbPosition="5" dbSize="5" dbTypeName="SMALLINT" inputType="number" javaName="status" javaType="java.lang.Short" jdbcTypeCode="5" label="Status" notNull="true" selected="true"/>
+<column dbComment="" dbDefaultValue="" dbName="payment_method" dbNotNull="false" dbPosition="6" dbSize="50" dbTypeName="VARCHAR" inputType="text" javaName="paymentMethod" javaType="java.lang.String" jdbcTypeCode="12" label="Payment method" maxLength="50" notNull="false" selected="true"/>
+<column dbComment="" dbDefaultValue="" dbName="tid" dbNotNull="false" dbPosition="6" dbSize="500" dbTypeName="VARCHAR" inputType="text" javaName="tid" javaType="java.lang.String" jdbcTypeCode="12" label="Tid" maxLength="500" notNull="false" selected="true"/>
+<column dbComment="" dbDefaultValue="" dbName="reason" dbNotNull="false" dbPosition="7" dbSize="50" dbTypeName="VARCHAR" inputType="text" javaName="reason" javaType="java.lang.String" jdbcTypeCode="12" label="Reason" maxLength="50" notNull="false" selected="true"/>
+<column dbComment="" dbDefaultValue="" dbName="account_info" dbNotNull="false" dbPosition="8" dbSize="65535" dbTypeName="TEXT" inputType="text" javaName="accountInfo" javaType="java.lang.String" jdbcTypeCode="-1" label="Account info" longText="true" maxLength="65535" notNull="false" selected="true"/>
+<column dateType="DT" dbComment="" dbDefaultValue="" dbName="create_date" dbNotNull="true" dbPosition="9" dbSize="19" dbTypeName="DATETIME" inputType="" javaName="createDate" javaType="java.util.Date" jdbcTypeCode="93" label="Create date" notNull="true" selected="true"/>
+<column dateType="DT" dbComment="" dbDefaultValue="" dbName="update_date" dbNotNull="false" dbPosition="10" dbSize="19" dbTypeName="DATETIME" inputType="" javaName="updateDate" javaType="java.util.Date" jdbcTypeCode="93" label="Update date" notNull="false" selected="true"/>
+</table>
+<table catalog="dream_reader" databaseType="TABLE" javaBean="User" name="user" schema="">
+<column dbAutoIncremented="true" dbComment="" dbDefaultValue="" dbName="id" dbNotNull="true" dbPosition="1" dbPrimaryKey="true" dbSize="10" dbTypeName="INT" inputType="number" javaName="id" javaType="java.lang.Integer" jdbcTypeCode="4" label="Id" notNull="true" selected="true"/>
+<column dbComment="" dbDefaultValue="" dbName="username" dbNotNull="false" dbPosition="2" dbSize="200" dbTypeName="VARCHAR" inputType="text" javaName="username" javaType="java.lang.String" jdbcTypeCode="12" label="Username" maxLength="200" notNull="false" selected="true"/>
+<column dbComment="" dbDefaultValue="" dbName="password" dbNotNull="false" dbPosition="3" dbSize="300" dbTypeName="VARCHAR" inputType="text" javaName="password" javaType="java.lang.String" jdbcTypeCode="12" label="Password" maxLength="300" notNull="false" selected="true"/>
+<column dbComment="" dbDefaultValue="0" dbName="point" dbNotNull="true" dbPosition="4" dbSize="10" dbTypeName="INT" inputType="number" javaName="point" javaType="java.lang.Integer" jdbcTypeCode="4" label="Point" notNull="true" selected="true"/>
+<column dateType="DT" dbComment="" dbDefaultValue="" dbName="create_date" dbNotNull="false" dbPosition="4" dbSize="19" dbTypeName="DATETIME" inputType="" javaName="createDate" javaType="java.util.Date" jdbcTypeCode="93" label="Create date" notNull="false" selected="true"/>
+<column dateType="DT" dbComment="" dbDefaultValue="" dbName="update_date" dbNotNull="false" dbPosition="5" dbSize="19" dbTypeName="DATETIME" inputType="" javaName="updateDate" javaType="java.util.Date" jdbcTypeCode="93" label="Update date" notNull="false" selected="true"/>
+<column dbComment="" dbDefaultValue="" dbName="phone" dbNotNull="false" dbPosition="5" dbSize="50" dbTypeName="VARCHAR" inputType="text" javaName="phone" javaType="java.lang.String" jdbcTypeCode="12" label="Phone" maxLength="50" notNull="false" selected="true"/>
+</table>
+</tableList>
+</root>

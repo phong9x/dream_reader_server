@@ -1,0 +1,19 @@
+package ${ROOT_PKG}.common.job;
+
+import javax.annotation.Resource;
+import org.springframework.scheduling.annotation.Scheduled;
+
+public class ExecuteJob {
+
+	@Resource
+	
+	@Scheduled(cron = "0 0 0 * * *")
+	public void ExampleScheduleEveryDay() {
+
+	}
+
+	@Scheduled(fixedRate = 3600000)
+	public void ExampleScheduleEveryTime() {
+
+	}
+}

@@ -1,0 +1,799 @@
+body.join-page{
+	font-size: 15px;
+	color: #414141;
+	background-image: url(../images/bg/bg-body.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: top center;
+	font-family: 'THEJung150';
+}
+a {
+	color: #414141;
+}
+
+.radio-style-4 {
+  height: 18px;
+  width: 18px;
+  position: relative;
+  display: inline-block;
+  /* -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.5); */
+  outline: none;
+}
+.radio-style-4 > input[type="radio"] {
+  display: none;
+  position: absolute;
+  left: 30px;
+  top: 5px;
+}
+.radio-style-4 .after-checkbox {
+  display: table;
+  width: 18px;
+  height: 18px;
+  margin-bottom: 0;
+  /* -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out; */
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: url(../images/icons/icon-uncheck-pay.png) left center no-repeat;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  border: 0;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+  background-size: 100%;
+}
+.radio-style-4 .after-checkbox .item-text {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'THEJung150', sans-serif;
+  position: relative;
+  font-weight: normal;
+  padding: 0 20px;
+  display: none;
+}
+.radio-style-4 input[type=radio]:checked + .after-checkbox {
+  background: url(../images/icons/icon-checked-pay.png) left center no-repeat;
+  background-size: 100%;
+}
+
+.join {
+    padding-top: 50px;
+}
+.join-page .header-container {
+	background-image: none;
+	height: auto;
+}
+.privacy .header-container{
+	background-position: bottom center;
+	background-size: cover;
+}
+.join-content {
+    padding: 0 10%;
+    background-image: url(../images/bg/bg-join.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 800px;
+    max-width: 640px;
+    margin: auto;
+    padding-top: 136px;
+     margin-top: 50px;
+}
+.join input.form-control {
+    border-radius: 0;
+    box-shadow: none;
+    height: 45px;
+}
+
+label.label-input {
+    display: block;
+    margin-bottom: 10px;
+        font-weight: normal;
+}
+
+.input-item {
+    margin-bottom: 20px;
+}
+button.btn.btn-join {
+    width: 100%;
+    padding: 25px 10px;
+    background-color: #ffdd1d;
+    font-size: 18px;
+        margin-top: 10px;
+}
+
+.title-join {
+    font-size: 36px;
+    font-family: HogookB;
+    color: #231f20;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.footer-join {
+    padding-top: 50px;
+    text-align: center;
+}
+.footer-join p {
+    margin-bottom: 30px;
+}
+.input-item label.check {
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+.input-checkbox label.check {
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.input-checkbox {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.input-checkbox label.check:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #e5e5e5;
+}
+.input-checkbox label.check:after {
+    position: absolute;
+    content: "\f00c";
+    font-family: FontAwesome;
+    z-index: 1;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.input-checkbox input[type=checkbox] {
+	position: absolute;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    visibility: hidden;
+}
+.check-box-style {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.link-join {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    width: 90%;
+}
+.link-join a{
+	text-decoration: underline;
+
+}
+.input-checkbox input[type=checkbox]:checked + label.check:before{
+	background-color: #ffd800;
+}
+.link-join a.detail-link {
+    float: right;
+    color: #888888;
+    font-size: 12px;
+}
+.input-checkbox input[type=checkbox]:checked + label.check:after{
+	opacity: 1;
+}
+.title-small{
+	margin-bottom: 15px;
+	font-size: 15px;
+	text-align: center;
+}
+.find-pwd .join-content {
+    padding-top: 196px;
+}
+h3.title-privacy {
+    font-size: 13px;
+    color: #d7b600;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.title-page {
+    color: #333333;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.input-item span.error {
+    font-size: 12px;
+    float: right;
+    color: #ed5151;
+}
+
+.input-item span.success {
+    font-size: 12px;
+    float: right;
+    color: green;
+}
+
+
+.content-privacy {
+    padding: 20px;
+    overflow-x: hidden;
+    height: 440px;
+/*     overflow-y: scroll;
+position: absolute;
+right: -22px;
+width: 95%;
+left: 50%;
+transform: translateX(-50%); */
+}
+.scroll-wrapper {
+    overflow: hidden !important;
+    position: relative;
+}
+ 
+.scroll-wrapper > .scroll-content {
+    border: none !important;
+    box-sizing: content-box !important;
+    height: auto;
+    left: 0;
+    margin: 0;
+    max-height: none;
+    max-width: none !important;
+    overflow: scroll !important;
+    padding: 0;
+    position: relative !important;
+    top: 0;
+    width: auto !important;
+}
+ 
+.scroll-wrapper > .scroll-content::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+ 
+.scroll-element {
+    display: none;
+}
+.scroll-element, .scroll-element div {
+    box-sizing: content-box;
+}
+ 
+.scroll-element.scroll-x.scroll-scrollx_visible,
+.scroll-element.scroll-y.scroll-scrolly_visible {
+    display: block;
+}
+ 
+.scroll-element .scroll-bar,
+.scroll-element .scroll-arrow {
+    cursor: default;
+}
+ 
+.scroll-textarea {
+    border: 1px solid #cccccc;
+    border-top-color: #999999;
+}
+.scroll-textarea > .scroll-content {
+    overflow: hidden !important;
+}
+.scroll-textarea > .scroll-content > textarea {
+    border: none !important;
+    box-sizing: border-box;
+    height: 100% !important;
+    margin: 0;
+    max-height: none !important;
+    max-width: none !important;
+    overflow: scroll !important;
+    outline: none;
+    padding: 2px;
+    position: relative !important;
+    top: 0;
+    width: 100% !important;
+}
+.scroll-textarea > .scroll-content > textarea::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+ 
+ 
+ 
+ 
+/*************** SCROLLBAR DYNAMIC ***************/
+ 
+.scrollbar-dynamic > .scroll-element,
+.scrollbar-dynamic > .scroll-element div
+{
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+}
+ 
+.scrollbar-dynamic > .scroll-element div {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+ 
+.scrollbar-dynamic > .scroll-element.scroll-x {
+    bottom: 2px;
+    height: 7px;
+    left: 0;
+    min-width: 100%;
+    width: 100%;
+}
+ 
+.scrollbar-dynamic > .scroll-element.scroll-y {
+    height: 100%;
+    min-height: 100%;
+    right: 2px;
+    top: 0;
+    width: 7px;
+}
+ 
+.scrollbar-dynamic > .scroll-element .scroll-element_outer {
+    opacity: 0.3;
+ 
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+.scrollbar-dynamic > .scroll-element .scroll-element_size {
+    background-color: #cccccc;
+    opacity: 0;
+ 
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+ 
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+ 
+.scrollbar-dynamic > .scroll-element .scroll-bar {
+    background-color: #6c6e71;
+ 
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+ 
+/* scrollbar height/width & offset from container borders */
+ 
+.scrollbar-dynamic > .scroll-element.scroll-x .scroll-bar {
+    bottom: 0;
+    height: 7px;
+    min-width: 24px;
+    top: auto;
+}
+.scrollbar-dynamic > .scroll-element.scroll-y .scroll-bar {
+    left: auto;
+    min-height: 24px;
+    right: 0;
+    width: 7px;
+}
+ 
+.scrollbar-dynamic > .scroll-element.scroll-x .scroll-element_outer {
+    bottom: 0;
+    top: auto;
+    left: 2px;
+ 
+    -webkit-transition: height 0.2s;
+    -moz-transition: height 0.2s;
+    -o-transition: height 0.2s;
+    -ms-transition: height 0.2s;
+    transition: height 0.2s;
+}
+ 
+.scrollbar-dynamic > .scroll-element.scroll-y .scroll-element_outer {
+    left: auto;
+    right: 0;
+    top: 2px;
+ 
+    -webkit-transition: width 0.2s;
+    -moz-transition: width 0.2s;
+    -o-transition: width 0.2s;
+    -ms-transition: width 0.2s;
+    transition: width 0.2s;
+}
+ 
+.scrollbar-dynamic > .scroll-element.scroll-x .scroll-element_size { left: -4px; }
+.scrollbar-dynamic > .scroll-element.scroll-y .scroll-element_size { top: -4px; }
+ 
+ 
+/* update scrollbar offset if both scrolls are visible */
+ 
+.scrollbar-dynamic > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -11px; }
+.scrollbar-dynamic > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -11px; }
+ 
+ 
+/* hover & drag */
+ 
+.scrollbar-dynamic > .scroll-element:hover .scroll-element_outer,
+.scrollbar-dynamic > .scroll-element.scroll-draggable .scroll-element_outer {
+    overflow: hidden;
+ 
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+}
+.scrollbar-dynamic > .scroll-element:hover .scroll-element_outer .scroll-element_size,
+.scrollbar-dynamic > .scroll-element.scroll-draggable .scroll-element_outer .scroll-element_size {
+    opacity: 1;
+}
+.scrollbar-dynamic > .scroll-element:hover .scroll-element_outer .scroll-bar,
+.scrollbar-dynamic > .scroll-element.scroll-draggable .scroll-element_outer .scroll-bar {
+    height: 100%;
+    width: 100%;
+ 
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+ 
+.scrollbar-dynamic > .scroll-element.scroll-x:hover .scroll-element_outer,
+.scrollbar-dynamic > .scroll-element.scroll-x.scroll-draggable .scroll-element_outer {
+    height: 20px;
+    min-height: 7px;
+}
+.scrollbar-dynamic > .scroll-element.scroll-y:hover .scroll-element_outer,
+.scrollbar-dynamic > .scroll-element.scroll-y.scroll-draggable .scroll-element_outer {
+    min-width: 7px;
+    width: 10px;
+}
+.privacy-inner {
+    position: relative;
+    overflow: hidden;
+    height: 440px;
+    border: 1px solid #ccc;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.scrollbar-dynamic > .scroll-element .scroll-bar {
+    background-color: #6c6e71;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.pay-container .pay-inner .col-item{
+    
+}
+.pay-item{
+    margin-bottom: 29px;
+    width: 100%;
+    position: relative;
+}
+
+.pay-item .pay-check{
+    position: absolute;
+    bottom: 20px;
+    left: 9.5%;
+    z-index: 3000;
+}
+
+.pay-item .thumb-image{
+    position: relative;
+    z-index: 10;
+}
+.pay-item .thumb-image img{
+    width: 100%;
+}
+
+
+.pay-container .button-control{
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.pay-container .button-control .btn-payment{
+    background: url(../images/bg/bg-button-yellow.png) left top repeat-x;
+    height: 70px;
+    border: 1px solid #f3ce01;
+    font-family: 'THEJung150', sans-serif;
+    font-size: 16px;
+    padding: 24px 107px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+.mypage .label-input{
+	float: left;
+	line-height: 42px;
+	width: 30%;
+}
+.mypage .form-control{
+	float: left;
+	width: 70%;
+}
+.mypage .input-item{
+	overflow: hidden;
+}
+.color-red {
+	color: #ed5151 !important;
+}
+.mypage button#join-submit {
+    background: linear-gradient(#d1d1d1, #ccc, #d1d1d1);
+}
+@media (max-width: 767px){
+	span.error {
+	    position: absolute;
+	    bottom: 0;
+	    float: left;
+	    width: 100%;
+	    left: 0;
+	    display: none;
+	    font-size: 11px;
+	}	
+	.join-content{
+		padding: 0 15%;
+	}
+	.footer-join p {
+	    font-size: 13px;
+	    margin-bottom: 15px;
+	}
+	.body.join-page{
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.input-item.active span.error {
+		display: block;
+	}
+	.input-item.active {
+	    position: relative;
+	    padding-bottom: 25px;
+	}
+	.link-join a.detail-link {
+	    float: none;
+	    display: block;
+	}
+	.link-join {
+	    font-size: 12px;
+	    width: 82%;
+	    margin-bottom: -10px;
+	}
+	.input-checkbox {
+	    overflow: inherit;
+	    margin-bottom: 25px;
+	}
+	.join-content{
+		padding-top: 90px;
+	}
+	button.btn.btn-join{
+		padding: 14px 10px;
+	}
+	.find-pwd .join-content {
+	    padding-top: 130px;
+	    height: 560px;
+	}
+	.title-page{
+		text-align: center;
+	}
+	body.join-page{
+		-webkit-background-size: inherit;
+		background-size: inherit;
+	}
+
+    .pay-container{
+        padding-bottom: 0;
+        position: relative;
+    }
+    .pay-container .pay-inner{
+        padding-bottom: 340px;
+    }
+    .pay-container .button-control{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .pay-container .button-control .btn-payment{
+        width: 100%;
+        height: 120px;
+        box-shadow: none;
+        border-radius: 0;
+        border: 0;
+        padding: 0;
+        background-size: 100% 120px;
+        font-size: 28px;
+    }
+}
+@media (max-width: 480px){
+	span.error {
+	    position: absolute;
+	    bottom: 0;
+	    float: left;
+	    width: 100%;
+	    left: 0;
+	    display: none;
+	    font-size: 11px;
+	}	
+	.input-checkbox {
+	    overflow: inherit;
+	    margin-bottom: 25px;
+	}
+	.input-item.active span.error {
+		display: block;
+		font-size: 10px;
+	}
+	.input-item.active {
+	    position: relative;
+	    padding-bottom: 25px;
+	}
+	.input-checkbox label.check{
+		width: 20px;
+    	height: 20px;
+	}
+    #pay-page .header-mobile-container .menu-header .col-item.col-center{
+        font-size: 18px;
+    }
+    #pay-page .header-mobile-container .menu-header .col-item.col-right{
+        width: 100px;
+    }
+    .pay-container .pay-inner{
+        padding-bottom: 140px;
+    }
+    .pay-container .button-control .btn-payment{
+        width: 100%;
+        height: 70px;
+        box-shadow: none;
+        border-radius: 0;
+        border: 0;
+        padding: 0;
+        background-size: 100% 70px;
+        font-size: 18px;
+    }
+
+}
+@media screen and (max-device-width: 720px) {
+  .join-content{
+    max-width: 955px;
+  }
+  .title-join{
+    font-size: 60px;
+  }
+  .form-control{
+    font-size: 20px;
+  }
+  .privacy .title-page{
+    margin-top: 30px;
+  }
+  .join input.form-control{
+    height: 60px;
+  }
+  button.btn.btn-join{
+    font-size: 29px;
+  }
+  .footer-join p {
+      margin-bottom: 30px;
+      font-size: 25px;
+  }
+  .join .container{
+    width: 100%;
+  }
+  label.label-input {
+      margin-bottom: 16px;
+      font-size: 30px;
+  }
+  .join-content{
+    height: auto;
+  }
+  .privacy .header-container{
+    display: none;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .join-content{
+    max-width: 955px;
+  }
+  .title-join{
+    font-size: 70px;
+  }
+  .form-control{
+    font-size: 34px;
+  }
+  .join input.form-control {
+    height: 130px;
+    font-size: 36px;
+  }
+  button.btn.btn-join{
+    font-size: 48px;
+    margin-top: 30px;
+  }
+  .footer-join p {
+    margin-bottom: 30px;
+    font-size: 34px;
+  }
+  label.label-input {
+      margin-bottom: 16px;
+      font-size: 34px;
+  }
+  .link-join{
+    font-size: 28px;
+  }
+  .input-item span.error{
+    font-size: 26px;
+  }
+  .link-join a.detail-link{
+    font-size: 34px;
+  }
+  .check-box-style{
+    width: 42px;
+    height: 40px;
+  }
+  .input-checkbox{
+    margin-bottom: 30px;
+  }
+  .join-content{
+    height: auto;
+  }
+}
+
+@media screen and (max-device-width: 375px) {
+  .join-content{
+    max-width: 955px;
+  }
+  .title-join{
+    font-size: 70px;
+  }
+  .form-control{
+   font-size: 38px;
+  }
+  .join input.form-control {
+    height: 130px;
+    font-size: 38px;
+  }
+  button.btn.btn-join{
+    font-size: 48px;
+    margin-top: 30px;
+  }
+  .footer-join p {
+    margin-bottom: 30px;
+    font-size: 38px;
+  }
+  label.label-input {
+    margin-bottom: 16px;
+    font-size: 38px;
+  }
+  .link-join{
+    font-size: 29px;
+  }
+  .input-item span.error{
+    font-size: 26px;
+  }
+  .link-join a.detail-link{
+    font-size: 38px;
+  }
+  .check-box-style{
+    width: 42px;
+    height: 40px;
+  }
+  .input-checkbox{
+    margin-bottom: 30px;
+  }
+  .join-content{
+    height: auto;
+  }
+}

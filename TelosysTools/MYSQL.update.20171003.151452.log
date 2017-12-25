@@ -1,0 +1,14 @@
+Update date : Tue Oct 03 15:14:52 ICT 2017
+ 
+ Table 'category' found in repository
+ (=) table 'category' unchanged
+ 
+ Table 'contents' found in repository
+ (=) table 'contents' unchanged
+ 
+ Table 'payment_history' found in repository
+ . Column 'payment_method' added
+ (*) table 'payment_history' updated : 1 change(s)
+ 
+ Table 'user' found in repository
+ (=) table 'user' unchanged

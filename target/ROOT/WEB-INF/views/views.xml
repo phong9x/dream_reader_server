@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+    <definition name="login_layout" template="/WEB-INF/views/layout/layout_login.jsp">
+    
+    </definition>
+    
+    <definition name="policy_layout" template="/WEB-INF/views/layout/layout_policy.jsp">
+    
+    </definition>
+
+    <definition name="auth_layout" template="/WEB-INF/views/layout/layout_auth.jsp">
+        <put-attribute name="heading" value="/WEB-INF/views/layout/heading.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
+    </definition>
+
+    <definition name="blank_layout" template="/WEB-INF/views/layout/layout_blank.jsp">
+
+    </definition>
+
+    <definition extends="auth_layout" name="/index">
+        <put-attribute name="title" value="번호드림" />
+        <put-attribute name="content" value="번호드림" />
+        <put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+    </definition>
+    
+    <definition extends="auth_layout" name="/auth/*">
+        <put-attribute name="title" value="{1}" />
+        <put-attribute name="body" value="/WEB-INF/views/auth/{1}.jsp" />
+    </definition>
+    
+    <definition extends="login_layout" name="/auth/mypage">
+        <put-attribute name="title" value="마이페이지" />
+        <put-attribute name="body" value="/WEB-INF/views/auth/mypage.jsp" />
+    </definition>
+    
+    <definition extends="login_layout" name="/auth/withdraw">
+        <put-attribute name="title" value="회원탈퇴" />
+        <put-attribute name="body" value="/WEB-INF/views/auth/withdraw.jsp" />
+    </definition>
+    
+    <definition extends="blank_layout" name="/auth/*/*">
+        <put-attribute name="title" value="{1} - {2}" />
+        <put-attribute name="body" value="/WEB-INF/views/auth/{1}/{2}.jsp" />
+    </definition>
+
+    <definition extends="login_layout" name="/login">
+        <put-attribute name="title" value="로그인" />
+        <put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+    </definition>
+
+	<definition extends="login_layout" name="/join">
+        <put-attribute name="title" value="회원가입" />
+        <put-attribute name="body" value="/WEB-INF/views/join.jsp" />
+    </definition>
+    
+    <definition extends="login_layout" name="/findpw">
+        <put-attribute name="title" value="비밀번호 찾기" />
+        <put-attribute name="body" value="/WEB-INF/views/findpw.jsp" />
+    </definition>
+    
+    <definition extends="policy_layout" name="/policy">
+        <put-attribute name="title" value="서비스 이용약관" />
+        <put-attribute name="body" value="/WEB-INF/views/policy.jsp" />
+    </definition>
+    
+    <definition extends="policy_layout" name="/privacy">
+        <put-attribute name="title" value="개인정보 취급방침" />
+        <put-attribute name="body" value="/WEB-INF/views/privacy.jsp" />
+    </definition>
+    
+    
+    
+</tiles-definitions>

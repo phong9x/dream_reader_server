@@ -1,0 +1,13 @@
+Update date : Fri Sep 29 12:01:13 ICT 2017
+ 
+ Table 'category' not found in repository
+ (+) table 'category' added
+ 
+ Table 'contents' not found in repository
+ (+) table 'contents' added
+ 
+ Table 'payment_history' found in repository
+ (=) table 'payment_history' unchanged
+ 
+ Table 'user' found in repository
+ (=) table 'user' unchanged
